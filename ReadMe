@@ -1,0 +1,6 @@
+Notes on matlab routines
+LPM_NEP.m - The base particle model used for the primary results in the paper. This 2-D particle model outputs 2-D fields of perturbed aerosol concentration. The LES library provides the variances, mean winds, dissipation rates, inversion heights, background aerosol concentrations, and precipitation rates needed to drive the particle model. The 2-D aerosol concentration field is superimposed on the reflectance fields from the LES, which can then be converted to a Twomey forcing.
+
+LPM_NEP_age.m - Mostly similar to LPM_NEP.m, but tracks 3 different particle age groups. The forcing as a function of particle lifetime can then be calculated. 
+
+LPM_width.m - This routine is used to calculate the plume widths and spreading rates, using particle-batch width tracking. 
